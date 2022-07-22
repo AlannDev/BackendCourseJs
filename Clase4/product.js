@@ -1,6 +1,4 @@
-const { time } = require('console');
 const fs = require('fs');
-const { REPL_MODE_STRICT } = require('repl');
 
 class Product {
     constructor(path){
