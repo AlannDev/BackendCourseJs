@@ -8,6 +8,8 @@ prod.save({title: 'produc3', price: 150, thumnail: 'url foto prod3'});
 
 prod.getById(2);
 
+prod.getAll();
+
 prod.delete(1);
 
 prod.deleteAll();
