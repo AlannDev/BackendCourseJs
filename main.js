@@ -1,28 +1,18 @@
-const Product = require('./product.js')
+const http = require("http")
 
-const prod = new Product("./test.txt");
+const server = http.createServer((request, response) => {
+    const hour = new Date().getHours();
+    if(hour >= 6 && hour <= 13){
+        response.end(`Son las ${hour} horas, Buenos Dias`)
+    }
+    else if(hour >= 12 && hour >= 19){
+        response.end(`buenas tardes son las ${hour} horas`)
+    }
+    else if(hour > 19 && hour < 24){
+        response.end(`buenas noches, son las ${hour} horas`)
+    }
+})
 
-async function saveProducts (){
-    await prod.save({title: 'produc1', price: 320, thumnail: 'url foto prod1'});
-    await prod.save({title: 'produc2', price: 200, thumnail: 'url foto prod2'});
-    await prod.save({title: 'produc3', price: 150, thumnail: 'url foto prod3'});
-}
-
-saveProducts();
-
-
-async function getById() {
-    const result = await prod.getById(2);
-    console.log(result)
-}
-
-// (async () => {
-//     console.log(await prod.getById(2))
-// })()
-getById();
-
-async function deleteAll() {
-    await prod.deleteAll();
-}
-
-//deleteAll();
+const createServer = server.listen(8080, () => {
+    console.log(`escuchando el puerto ${server.address().port}`)
+})
