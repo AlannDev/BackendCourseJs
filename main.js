@@ -8,17 +8,21 @@ async function saveProducts (){
     await prod.save({title: 'produc3', price: 150, thumnail: 'url foto prod3'});
 }
 
-//saveProducts();
+saveProducts();
 
 
-prod.getById(2);
+async function getById() {
+    const result = await prod.getById(2);
+    console.log(result)
+}
 
-// prod.getAll();
-
-// prod.delete(1);
+// (async () => {
+//     console.log(await prod.getById(2))
+// })()
+getById();
 
 async function deleteAll() {
     await prod.deleteAll();
 }
 
-deleteAll();
+//deleteAll();
