@@ -10,7 +10,7 @@ class Product {
         let fileParse = JSON.parse(file);
         if(fileParse.length){
             let lastProdId = fileParse[fileParse.length - 1].id
-            await fs.promises.writeFile(this.path, JSON.stringify([...file, {...obj, id: lastProdId + 1}]), null, 2);
+            await fs.promises.writeFile(this.path, JSON.stringify([...fileParse, {...obj, id: lastProdId + 1}]), null, 2);
         }
         else {
             await fs.promises.writeFile(this.path, JSON.stringify([{...obj, id: 1}]), null, 2);
