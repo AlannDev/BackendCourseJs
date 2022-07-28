@@ -27,7 +27,7 @@ app.get('/productos', async (req, res) => {
     res.send(listProducts)
 })
 
-app.get('/productoRamdon', async (req, res) => {
+app.get('/productoRandom', async (req, res) => {
     const listProducts = await prod.getAll();
     const idProdAleatorio = Math.floor(Math.random() * listProducts.length);
     const prodRandom = listProducts[idProdAleatorio];
