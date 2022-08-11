@@ -1,5 +1,5 @@
 
-PUT http://localhost:8080/api/products/6 HTTP/1.1
+PUT http://localhost:8080/api/products/7 HTTP/1.1
 content-type: application/json
 
 {
@@ -7,3 +7,7 @@ content-type: application/json
     "price": "300",
     "thumbnail": "url prod prueba"
 }
+
+
+# DELETE  http://localhost:8080/api/products/6 HTTP/1.1
+# content-type: application/json

@@ -53,9 +53,9 @@ class Product {
         try {
             let file = await fs.promises.readFile(this.path, 'utf8')
             let fileParse = JSON.parse(file);
-            let prod = fileParse.find(p => p.id === productId);
+            let prod = fileParse.find(p => p.id === parseInt(productId));
             if(prod){
-                let fileParseFiltered = fileParse.filter(p => p.id !== id);
+                let fileParseFiltered = fileParse.filter(p => p.id !== productId);
                 await fs.promises.writeFile(this.path, JSON.stringify(fileParseFiltered, null, 2))
                 return ({message: "Producto eliminado"})
             }
@@ -77,14 +77,9 @@ class Product {
 
     async update(obj){
         try {
-            console.log(this.path)
             let file = await fs.promises.readFile(this.path, "utf-8")
-            console.log(file)
             let fileParse = JSON.parse(file)
-            console.log(obj.id)
-            console.log(fileParse)
-            const objIndex = fileParse.findIndex(prod => prod.id === obj.id)
-            console.log(objIndex)
+            const objIndex = fileParse.findIndex(prod => prod.id === parseInt(obj.id))
             if(objIndex !== -1){
                 fileParse[objIndex] = obj
                 await fs.promises.writeFile(this.path,JSON.stringify(fileParse,null,2))

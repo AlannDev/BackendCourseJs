@@ -93,7 +93,7 @@ router.put("/:id", async(req,res)=>{
     try {
         const objProd = req.body
         const {id} = req.params
-        const result = await prod.update({id:id,...objProd})
+        const result = await prod.update({id: parseInt(id),...objProd})
         res.json({
             result: result
         })
