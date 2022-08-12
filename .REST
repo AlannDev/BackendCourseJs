@@ -1,11 +1,11 @@
 
-PUT http://localhost:8080/api/products/7 HTTP/1.1
+PUT http://localhost:8080/api/products/5 HTTP/1.1
 content-type: application/json
 
 {
     "title": "prod prueba 1",
     "price": "300",
-    "thumbnail": "url prod prueba"
+    "thumbnail": "url proddd prueba"
 }
 
 
