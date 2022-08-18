@@ -1,0 +1,16 @@
+html
+
+    head
+        title="Mi primera plantilla con pug jsss"
+    body
+        h1="Hola Pug"
+        include partials/formulario.pug
+
+      
+
+         ul
+         each val, index in productos
+         
+            li= "nombre" + ': ' + val.title
+            li= "precio" + ":" + val.price
+            li= "thumbnail" + ":" + val.thumbnail
