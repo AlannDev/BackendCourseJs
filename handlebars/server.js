@@ -1,19 +1,24 @@
+const express = require("express")
+const { Server: HttpServer } = require("http")
+const { Server: IOServer } = require("socket.io")
 
-const express = require('express')
+
 const app = express()
-const { Router} = express
-const router = Router()
+
+const httpServer = new HttpServer(app)
+const io = new IOServer(httpServer)
 const Contenedor = require("./contenedor")
 const contenedor = new Contenedor("./productos.txt")
+const contenedorMensajes = new Contenedor("./mensajes.txt")
 app.use(express.json())
 const handlebars = require('express-handlebars')
 app.use(express.static('public'))
-app.use( express.urlencoded({extended: true}) )
+app.use(express.urlencoded({ extended: true }))
 
 const port = process.env.PORT || 4000
 
 app.engine(
-    'hbs', 
+    'hbs',
     handlebars.engine({
         extname: '.hbs',
         defaultLayout: '',
@@ -25,38 +30,69 @@ app.set('view engine', 'hbs')
 app.set('views', './views')
 
 const productos = []
+const arrayMensajes = []
 
-//configurar get 
-app.get('/productos', async(req, res) => {
-    try {
-        const productos1 = await contenedor.getAll()
-        productos.push(productos1)
-          res.render('productos',{
-              mensaje: 'Hola ejs',
-              productos:productos1
-          })
-        } catch (error) {
-            res.json({
-                error
-            })
-        }
 
-} )
-app.get('/', async(req, res) => {
+
+io.on("connection", async (socket) => {
+    const prods = await contenedor.getAll()
+    
+    const mensaje = {
+        mensajee: "todo ok",
+        prods,
+        arrayMensajes,
+    }
+    socket.emit("mensaje-servidor", mensaje)
+    socket.on("mensaje-nuevo", (mensajeChat) => {
+       
+        arrayMensajes.push(mensajeChat)
+        contenedorMensajes.save(mensajeChat)
+
+        io.sockets.emit("mensaje-servidor", mensaje)
+    })
+
+    socket.on("producto-nuevo", (productos) => {
+        prods.push(productos)
+        contenedor.save(productos)
+
+    
+
+        io.sockets.emit("mensaje-servidor", mensaje)
+    })
+})
+
+app.get('/productos', async (req, res) => {
     try {
-        const productos1 = await contenedor.getAll()
-      productos.push(productos1)
-        res.render('index',{
-            mensaje: 'Hola ejs',
-            productos:productos1
+        const prods = await contenedor.getAll()
+        productos.push(prods)
+        res.render('productos', {
+            mensaje: 'hola handle,Productos',
+            productos: prods
         })
-        
     } catch (error) {
         res.json({
             error
         })
     }
-} )
+
+})
+app.get('/', async (req, res) => {
+    try {
+        const prods = await contenedor.getAll()
+        const mensajes = await contenedorMensajes.getAll()
+        productos.push(prods)
+        res.render('index', {
+            mensaje: 'Hola handlebars',
+            productos: prods,
+            mensajes: mensajes
+        })
+
+    } catch (error) {
+        res.json({
+            error
+        })
+    }
+})
 
 
 
@@ -64,15 +100,10 @@ app.post('/productos', async (req, res) => {
     try {
         const obj = req.body
         contenedor.save(obj)
-    
-        console.log(obj)
-        
         productos.push(obj)
-        res.render('index',{
-            mensaje: 'Hola ejs',
-            productos:productos
+        res.render('index', {
+            productos: productos
         })
-        
     } catch (error) {
         res.json({
             error
@@ -82,11 +113,9 @@ app.post('/productos', async (req, res) => {
 })
 
 
-
-
-app.listen(port, err =>{
-if(err) throw new Error (`error on server listen${err}`)
-else{
-    console.log(`server on running on port ${port}`)
-}
+httpServer.listen(port, err => {
+    if (err) throw new Error(`error on server listen${err}`)
+    else {
+        console.log(`server on running on port ${port}`)
+    }
 })

@@ -1,0 +1,32 @@
+[
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3060",
+    "price": "200",
+    "id": 1
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Amd 5700",
+    "price": "100",
+    "id": 2
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3090",
+    "price": "300",
+    "id": 3
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3060",
+    "price": "200",
+    "id": 4
+  },
+  {
+    "title": "DARIO",
+    "price": "432432",
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "id": 19
+  }
+]
