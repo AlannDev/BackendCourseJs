@@ -1,0 +1,101 @@
+[
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3060",
+    "price": "200",
+    "id": 1
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Amd 5700",
+    "price": "100",
+    "id": 2
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3090",
+    "price": "300",
+    "id": 3
+  },
+  {
+    "thumbnail": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+    "title": "Nvidia 3060",
+    "price": "200",
+    "id": 4
+  },
+  {
+    "title": "dariooo",
+    "thumbnail": "FOTOOO",
+    "price": "4324",
+    "id": 5
+  },
+  {
+    "title": "dario",
+    "thumbnail": "32432",
+    "price": "43432",
+    "id": 6
+  },
+  {
+    "title": "dario2",
+    "thumbnail": "foto2",
+    "price": "2222",
+    "id": 7
+  },
+  {
+    "title": "",
+    "thumbnail": "",
+    "price": "",
+    "id": 8
+  },
+  {
+    "title": "dario",
+    "thumbnail": "34243",
+    "price": "3243",
+    "id": 9
+  },
+  {
+    "id": 10
+  },
+  {
+    "title": "432432",
+    "thumbnail": "3242",
+    "price": "32432",
+    "id": 11
+  },
+  {
+    "title": "dario",
+    "thumbnail": "dsada",
+    "price": "432432",
+    "id": 12
+  },
+  {
+    "title": "3242",
+    "thumbnail": "43242",
+    "price": "3242",
+    "id": 13
+  },
+  {
+    "title": "dariooo",
+    "thumbnail": "3432",
+    "price": "4324",
+    "id": 14
+  },
+  {
+    "title": "HOLA",
+    "thumbnail": "COMO ",
+    "price": "2222",
+    "id": 15
+  },
+  {
+    "title": "dsada",
+    "thumbnail": "43432",
+    "price": "3242",
+    "id": 16
+  },
+  {
+    "title": "dario",
+    "thumbnail": "4324",
+    "price": "432432",
+    "id": 17
+  }
+]
