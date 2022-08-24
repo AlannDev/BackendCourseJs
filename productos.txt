@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Motorola",
+    "precio": 50000,
+    "id": 1,
+    "imagen": "https://www.notebookcheck.org/uploads/tx_nbc2/2686788-l0.jpg"
+  },
+  {
+    "titulo": "Samsung",
+    "precio": 10000,
+    "id": 2,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_793841-MLA45658507914_042021-O.jpg"
+  },
+  {
+    "titulo": "xiaomi",
+    "precio": "3400",
+    "id": 3,
+    "imagen": "https://buytek.net/wp-content/uploads/2021/05/POCO-X3-NFC-.11.jpg"
+  },
+  {
+    "titulo": "Iphone",
+    "precio": "299000",
+    "imagen": "https://buytek.net/wp-content/uploads/2021/10/Iphone-13-Pro.8.png",
+    "id": 4
+  },
+  {
+    "titulo": "xiaomi",
+    "precio": "1500",
+    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-g990elgaaro/gallery/ar-galaxy-s21-fe-g990-408811-sm-g990elgaaro-thumb-530831979?$320_320_PNG$",
+    "id": 5
+  },
+  {
+    "titulo": "LG",
+    "precio": "45000",
+    "imagen": "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/download5094.jpg",
+    "id": 6
+  },
+  {
+    "titulo": "LG",
+    "precio": "80000",
+    "imagen": "https://www.lg.com/cac/images/telefonos-celulares/lgh815p/gallery/large01.jpg",
+    "id": 7
+  }
+]

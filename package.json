@@ -1,27 +1,15 @@
 {
-  "name": "backendcoursejs",
+  "name": "clase12",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./pug/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlannDev/BackendCourseJs.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlannDev/BackendCourseJs/issues"
-  },
-  "homepage": "https://github.com/AlannDev/BackendCourseJs#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-handlebars": "^6.0.6",
-    "nodemon": "^2.0.19",
-    "pug": "^3.0.2"
+    "socket.io": "^4.5.1"
   }
 }
