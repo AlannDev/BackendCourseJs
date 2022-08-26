@@ -10,19 +10,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
-
-// function error404(req, res, next) {
-//     let error = new Error()
-
-//     error.status = 404
-//     res.json(`Error  ${error.status} - Página no existente`)
-
-//     next()
-// }
-
 app.use('/api/productos', routerProd)
 app.use('/api/carrito', routerCart)
-// app.use(error404)
 
 app.listen(PORT, () => {
     console.log(`Escuchando en puerto ${PORT}`)
