@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles sheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Primer entregar Final</title>
+</head>
+
+<body>
+    
+    <form action="http://localhost:8080/api/productos" method="POST">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="card-title" required>
+        <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" class="card-text" required>
+        <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="card-text" required>
+        <input type="text" name="foto" id="foto" placeholder="Foto" class="card-text required" required>
+        <input type="number" name="precio" id="precio" placeholder="Precio" class="card-text required" required>
+        <input type="number" name="stock" id="stock" placeholder="Stock disponible" class="card-text required" required>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+
+</html>

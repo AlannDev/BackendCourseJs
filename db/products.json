@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "id": 1,
+    "timestamp": 1661468792102
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661468793431,
+    "id": 2
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "id": 3,
+    "timestamp": 1661469512228
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661468794797,
+    "id": 4
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661468795416,
+    "id": 5
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661469573849,
+    "id": 6
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661469575134,
+    "id": 7
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661469751796,
+    "id": 8
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661469753199,
+    "id": 9
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661469754036,
+    "id": 10
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661470200289,
+    "id": 11
+  },
+  {
+    "nombre": "Nombre Prueba",
+    "descripcion": "Descripcion Prueba",
+    "codigo": "codig123asr",
+    "foto": "foto Prueba",
+    "precio": 2223,
+    "stock": 123,
+    "timestamp": 1661470229907,
+    "id": 12
+  }
+]
