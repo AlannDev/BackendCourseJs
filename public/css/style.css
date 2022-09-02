@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.frontpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment{
+    display:flex;
+    flex-direction: column;
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    width: 200px;
+    height: 250px;
+}
+
+img{
+    width: 100%;
+}
+
+.title{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.card-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    display: flex;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin:3px;
+    width: 300px;
+}
